@@ -20,18 +20,21 @@ class SearchBox extends Component {
   }
 
   handleChange(e) {
+    e.preventDefault();
     this.setState({
       value: e.target.value
     })
     console.log(this.state.value)
-    if(this.state.value.length >=10) {
-    this.setState({className:'search warning'})
+    console.log(this.state.value.length)
+    if(this.state.value.length + 1!== 10 
+    || this.state.value.indexOf('090') !== 0 
+    || typeof(this.state.value * 1 ) !== "number") {
+      this.setState({className:'search warning'})
     }
     else {
       this.setState( {className: 'search' })
     }
   }
- 
   render() {
     return (
       <div className="wrapper">
