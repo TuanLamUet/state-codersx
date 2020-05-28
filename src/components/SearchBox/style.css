@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+}
+.search {
+  width: 421px;
+  height: 54px;
+  left: 62px;
+  top: 237px;
+  border: 1px solid rgba(124, 146, 205, 0.7);
+  box-sizing: border-box;
+  border-radius: 50px;
+  outline: none;
+  }
+  ::placeholder {
+    color: #7d6a88;
+    padding-left: 30px;
+    font-size: 17px;
+  }
+  .icon {
+    background-color: blueviolet;
+    width: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    right: 36%;
+  }
