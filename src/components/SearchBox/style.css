@@ -23,5 +23,9 @@
     border-radius: 50%;
     position: absolute;
     top: 12%;
-    right: 36%;
+    right: 37%;
   }
+
+.warning {
+  border: 1px solid red;
+}
